@@ -2,7 +2,7 @@
     margin-top: 10px;
     margin-left: 120px;
     max-width: 1000px;
-    height: 500px;
+    height: 80vh;
     
 }
 .container{
@@ -16,20 +16,18 @@
 .container-1{
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* width: 60%;
-    height: 100%; */
+    flex-wrap: wrap;
     
-    min-height: 60px;
+    flex-basis: 100%;
 }
 .container-2{
     display: flex;
-    /* width: 40%;
-    height: 100%; */
-    flex-basis: 100%;
+    
+    flex-basis: 100px;
 }
 .item{
     flex-grow: 1;
+    
   
 }
 .item-1{
@@ -50,11 +48,14 @@
    
 }
 
-@media(min-width:768px){
+@media(min-width:650px){
     .container-1{
         flex-direction: row;
         flex-wrap: wrap;
         flex-basis: 60%;
+    }
+    .container-2{
+        flex-basis: 40%;
     }
     
     .item-1{
@@ -66,11 +67,12 @@
     .item-3{
         flex-basis: 100%;
     }
-    .container-2{
-        flex-basis: 40%;
-    }
+    
     .item-4{
         flex-basis: 100%;
     }
 
 }
+
+
+
